@@ -1,14 +1,9 @@
-@font-face {
-    font-family: 'sanFranThin';
-    src: url(../fonts/sanfranThin.ttf);
-}
-
 
 
 html, body {
 	margin:0;border:0;padding:0;
 	font-size:14px;
-	font-family: 'sanFranThin';
+	font-family: 'Heebo', sans-serif;
 	overflow-x:hidden;
 	position: relative;
 }
@@ -46,20 +41,20 @@ background: linear-gradient(to left, #ef32d9 , #89fffd); /* W3C, IE 10+/ Edge, F
 
 .heading {
 	color:#484d53;
-	font-family:'sanFranThin';
+	font-family: 'Heebo', sans-serif;
 	line-height:38px;
 }
 
 .subheading {
 	color:#6a727b;
-	font-family:'Proxima';
+	font-family: 'Heebo', sans-serif;
 	line-height:38px;
 	margin:30px 0;
 	margin-bottom:50px;
 }
 
 .light {
-	font-family: 'Proxima'
+	font-family: 'Heebo', sans-serif;
 }
 
 a:hover {
@@ -118,7 +113,7 @@ p {
 }
 
 header {
-	background: url('../img/slider2.jpg') no-repeat center center;
+
 	background-size:cover;
 	position: relative;
 	overflow: hidden;
@@ -214,7 +209,7 @@ header .intro-text {
 
 .navbar-default .navbar-nav > li > a {
 	color:#bbb;
-    font-family: sanfranThin;
+    font-family: 'Heebo', sans-serif;
 }
 
 .navbar-default .navbar-nav > li > a:after {
@@ -278,14 +273,15 @@ ul {
 .appinfo{
     
 
+    
 background: #ef32d9; /* fallback for old browsers */
 background: -webkit-linear-gradient(to left, #ef32d9 , #89fffd); /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to left, #ef32d9 , #89fffd); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        
+  
 }
 
 header .heading {
-	font-family:'sanFranThin';
+	font-family: 'Heebo', sans-serif;
 	color:grey;
 	font-size: 150px;
     font-weight: lighter;
@@ -329,7 +325,7 @@ section.reviews {
 
 .btn {
 	display:inline-block;
-	font-family:'sanFranThin';
+	font-family: 'Heebo', sans-serif;
 	font-size:18px;
 	padding:15px 30px;
 	margin:20px 10px;
@@ -360,13 +356,13 @@ section.reviews {
 }
 
 .btn .price {
-	font-family:'Proxima';
+	font-family: 'Heebo', sans-serif;
 	margin-left:10px;
 }
 
 .btn-dropdown {
 	border:1px solid #cccccc;
-	font-family:'Proxima';
+	font-family: 'Heebo', sans-serif;
 	color:#888888;
 }
 
@@ -545,6 +541,14 @@ section.reviews {
 	font-family: 'Proxima';
 }
 
+.appbg{
+    background: url(../img/iPhone-6-Isometric-view-Mockup.png) no-repeat center center fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 1000px;
+}
+
 /* Footer */
 
 footer {
@@ -606,6 +610,10 @@ footer .social a.twitter:active {color:#55acee;}
 footer .social a.dribbble:active {color:#ea4c89;}
 footer .social a.vine:active {color:#00b488;}
 footer .social a.google-plus:active {color:#dd4b39;}
+
+
+
+
 
 /* Custom Styles */
 @media(max-width:768px) {
@@ -729,49 +737,8 @@ button:focus {
 	transform: scale(0.8) translateY(-5%);
 }
 
-/* Mobile Navigation */
 
-.mobile-nav {
-	position: fixed;
-	left:0;
-	top:100%;
-	width:100%;
-	height: 100%;
-	z-index:9500;
-	color:#222;
-	transition: all 0.3s ease;
-	background: rgba(255,255,255,.95);
-	display:table;
-	opacity: 0;
-        
-} .mobile-nav.active{top:0;opacity:1;}
-@media(min-width:768px){
-	.mobile-nav{display:none;}
-}
-
-.mobile-nav > ul {
-	display:table-cell;
-	vertical-align: middle;
-	list-style: none;
-	width:100%;
-	padding:0;
-	text-align: center;
-        overflow-y:hidden;
-}
-
-.mobile-nav > ul > li > a {
-	margin:10px 0;
-	font-size:16px;
-}
-
-.mobile-nav a {
-	color:#888;
-}
-
-.mobile-nav a.close-btn {
-	position: absolute;
-	bottom:30px;
-	left:calc(50% - 10px);
-	color:#666;
-	font-size:24px;
+.img-center{
+    display: block;
+     margin: 0 auto;
 }

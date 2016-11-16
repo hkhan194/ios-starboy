@@ -104,21 +104,7 @@ jQuery(function($) {
 		});
 	});
 
-	// Mobile Nav
-	$('.mobile-nav > ul').html($('.navbar-nav').html());
-	$('.mobile-nav').append("<a href='#' class='close-btn'><i class='icon_close'></i></a>");
-
-	$('.navbar-toggle').click(function(event){
-		event.stopPropagation();
-		$('#wrapper').addClass('behind');
-		$('.mobile-nav').addClass('active');
-	});
-	$('.mobile-nav a.close-btn').click(function(event){
-		$('#wrapper').removeClass('behind');
-		$('.mobile-nav').removeClass('active');
-		event.preventDefault();
-	});
-
+	
 	// Scrolling
 	$('a.scrollto').click(function() {
 		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
